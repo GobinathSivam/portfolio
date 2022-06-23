@@ -147,3 +147,16 @@
 
 
 }());
+
+function sendEmail() {
+	Email.send({
+		SecureToken: "security token of your smtp",
+		To: "someone@gmail.com",
+		From: "someone@gmail.com",
+		Subject: "Subject...",
+		Body: document.getElementById('text').value
+	}).then(
+		message => alert("mail sent successfully")
+	);
+}
+
