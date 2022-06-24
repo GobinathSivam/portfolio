@@ -145,20 +145,37 @@
 		skillsWayPoint();
 	});
 
+	//$('#btn-primary').click(function () {
+	//	$(location).attr('href', 'mailto:?subject='
+	//		+ encodeURIComponent("This is my subject")
+	//		+ "&body="
+	//		+ encodeURIComponent("This is my body")
+	//	);
+	//});
 
 }());
 
-function sendEmail() {
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username: "sivamgobinath@gmail.com",
-		Password: "Gobi96299",
-		To: 'gobinathonly@gmail.com',
-		From: "sivamgobinath@gmail.com",
-		Subject: "This is the subject",
-		Body: "And this is the body"
-	}).then(
-		message => alert("mail sent successfully")
-	);
+//function sendEmail() {
+//	Email.send({
+//		Host: "smtp.gmail.com",
+//		Username: "sivamgobinath@gmail.com",
+//		Password: "Gobi96299",
+//		To: 'gobinathonly@gmail.com',
+//		From: "sivamgobinath@gmail.com",
+//		Subject: "This is the subject",
+//		Body: "And this is the body"
+//	}).then(
+//		message => alert("mail sent successfully")
+//	);
+//}
+
+function sendMail() {
+	var link = "mailto:sivamgobinath@gmail.com"
+		+ "?cc=myCCaddress@example.com"
+		+ "&subject=" + encodeURIComponent("This is my subject")
+		+ "&body=" + encodeURIComponent(document.getElementById('myText').value)
+		;
+
+	window.location.href = link;
 }
 
