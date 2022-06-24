@@ -173,7 +173,7 @@ function sendMail() {
 	var link = "mailto:sivamgobinath@gmail.com"
 		+ "?cc=myCCaddress@example.com"
 		+ "&subject=" + encodeURIComponent("This is my subject")
-		+ "&body=" + encodeURIComponent(document.getElementById('myText').value)
+		+ "&body=" + encodeURIComponent("body of the content")
 		;
 
 	window.location.href = link;
