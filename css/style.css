@@ -60,6 +60,7 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 30px;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6, figure {
@@ -344,7 +345,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li .second-block {
   width: 60%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 
 }
 
@@ -591,7 +592,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: normal;
-  color: #bfbfbf;
+  color: #a0d9d9;
 }
 
 .timeline-body > p,
